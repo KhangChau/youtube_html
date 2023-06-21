@@ -1,0 +1,20 @@
+p {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 1000px;
+    background-color: rgb(248, 245, 245);
+    margin: 0px;
+}
+.header,
+.side-bar {
+    z-index: 100;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}

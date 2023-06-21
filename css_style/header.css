@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style:  solid;
+    border-color: rgba(214, 214, 214, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamberger-icon {
+    height: 24px;
+    margin: 0px 24px 0px 24px;
+    cursor: pointer;
+}
+.youtube-icon {
+    height: 20px;
+    cursor: pointer;
+}
+.middle-section {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* this "flex: 1" let middle-section can flex when we shrink horizontally the web window*/ 
+    max-width: 470px; /*this inform at maximum how wide the search bar is so it can remain its width*/
+}
+.search-bar{
+    flex: 1; /* this "flex:1" let the search-bar stretch through the space of middle section*/
+    height: 36px;
+    padding: 1px 2px 1px 12px;
+    border-width: 1px;
+    border-color: rgba(214, 214, 214, 1);
+    border-style: solid;  
+    border-radius: 2px;  
+    box-shadow: inset 0px 0px 2px rgba(0,0,0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+    width: 0;
+}
+.search-bar::placeholder {
+    border-color: blue;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+}
+.search-icon,
+.voice-search-icon {
+    width: 24px;
+}
+.search-button {
+    width: 64px;
+    height: 40px;
+    background-color: #f7f7f7;
+    border-color: rgba(214, 214, 214, 0.9);
+    border-width: 1px;
+    border-style:  solid;
+    border-radius: 2px;
+    margin-left: -1px;
+    padding: 1px 6px 1px 6px;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.right-tooltip-container .tooltip {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: rgba(56, 55, 55, 0.7);
+    padding: 12px 8px 12px 8px;
+    border-radius: 2px;
+    bottom: -40px;
+    pointer-events: none;
+    opacity: 0;    
+    transition: opacity 0.15s;
+    white-space: nowrap; /*prevent wrap*/
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.right-tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+.voice-search-button {
+    width: 40px;
+    height: 40px;
+    background-color: #f7f7f7;
+    padding: 1px 6px 1px 6px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 8px;
+}
+.search-button,
+.voice-search-button,
+.right-tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    margin: 0px 24px 0px 29px;   
+    flex-shrink: none; /* prevent shrinking between div(s) in the flex*/
+}
+.right-icon {
+    width: 24px;
+}
+.channel-avatar {
+    width: 32px;
+}
+.right-icon,
+.channel-avatar {
+    cursor: pointer;
+}
+.noti-container {
+    position: relative;
+}
+.noti-count {
+    position: absolute;
+    color: white;
+    background-color: rgb(214, 2, 2);
+    font-size: 9px;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    border-radius: 50%;
+    top: -1px;
+    right: -4px;
+}

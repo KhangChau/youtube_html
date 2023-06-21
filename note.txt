@@ -1,0 +1,14 @@
+copy UI from base on this link:
+https://supersimple.dev/exercises/youtube
+
+position:
+fixed = placed in the browser window
+absolute = placed on the page
+
+absolute in fixed ~ nút exit
+absolute in relative ~ thời lượng video
+
+<header>
+<nav>
+<main>
+<section>
